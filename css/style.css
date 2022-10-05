@@ -1,0 +1,460 @@
+/* header styling */
+
+header {
+    display: inline-block;
+    width: 100%;
+    background-color: #85b98b;
+}
+
+header img {
+    margin-top: 0.75%;
+    width: 30%;
+    height: 30%;
+    text-align: left;
+    float: left;
+}
+
+nav {
+    padding-top: 5%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+nav li {
+    font-family: Quicksand;
+    font-weight: bolder;
+    display: inline;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1rem;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: #25528e;
+}
+
+#selected {
+    text-decoration: underline;
+}
+
+#connect {
+    border: solid pink 2px;
+    background-color: pink;
+    border-radius: 2rem;
+}
+
+/* hide the tablet/mobile connect button and hamburger menu */
+#connect-mobile, #hamburger-menu {
+    display: none;
+}
+
+/* footer styles */
+footer {
+    clear: both;
+    background-color: #85b98b;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-height: 20%;
+    font-family: Nunito;
+    font-size: 1rem;
+}
+
+footer h4, footer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer h4 {
+    font-weight: bold;
+}
+
+a {
+    color: #25528e;
+    text-decoration: underline;
+}
+
+/* body styles*/
+#intro {
+    background-color: #a8cdac;
+    margin-bottom: 10%;
+}
+
+#intro h2 {
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-family: Quicksand;
+    font-size: 3.5rem;
+    max-width: 40%;
+    padding-left: 5%;
+    line-height: 130%;
+}
+
+#intro p {
+    clear:both;
+    float: left;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 1.4rem;
+    max-width: 40%;
+    padding-left: 5%;
+    line-height: 140%;
+}
+
+#intro img{
+    clear: both;
+    width: 45%;
+    height: 40%;
+    max-width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#descriptions {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+}
+
+.description-imgleft #left-img1, .description-imgleft #left-img2{
+    padding-left: 5%;
+    width: 40%;
+    height: 50%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+#left-img1-mobile, #left-img2-mobile{
+    display: none;
+}
+
+.description-imgleft h3{
+    max-width: 35%;
+    padding-left: 10%;
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: Quicksand;
+    font-weight: bold;
+    float: left;
+}
+
+.description-imgleft p{
+    float: left;
+    max-width: 35%;
+    padding-left: 10%;
+    font-size: 1.2rem;
+    font-family: Nunito;
+    font-weight: normal;
+}
+
+.description-imgright h3 {
+    clear: both;
+    float: left;
+    text-align: left;
+    max-width: 35%;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 2.5rem;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+.description-imgright p {
+    clear: both;
+    float: left;
+    text-align: left;
+    max-width: 35%;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-family: Nunito;
+    font-weight: normal;
+}
+
+.description-imgright img{
+    clear: both;
+    width: 40%;
+    height: 50%;
+    max-width: 50%;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-top: 10%;
+}
+
+p.learn-more{
+    font-size: 1rem;
+    font-family: Nunito;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Tablet view: on screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    header img {
+        margin-top: 2%;
+        width: 40%;
+        height: 30%;
+        text-align: left;
+        float: left;
+        padding-right: 35%;
+    }
+
+    /* hide the navbar for the desktop view */
+    nav li {
+        display: none;
+        background-color: #85b98b;
+    }
+
+    /* display the tablet/mobile connect button and hamburger menu */
+    #connect-mobile {
+        font-family: Quicksand;
+        font-weight: bolder;
+        display: inline;
+        float: left;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        font-size: 1rem;
+        border: solid pink 1px;
+        background-color: pink;
+        border-radius: 2rem;
+    }
+
+    #hamburger-menu {
+        width: 5%;
+        height: 5%;
+        display: inline;
+        float: right;
+        margin-right: 3%;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    
+    nav a:hover {
+        color: #25528e;
+    }
+
+    #intro {
+        background-color: #a8cdac;
+        margin-bottom: 10%;
+    }
+
+    #intro h2 {
+        font-size: 200%;
+        max-width: 40%;
+        padding-left: 5%;
+        line-height: 130%;
+    }
+
+    #intro p {
+        font-size: 90%;
+        max-width: 40%;
+        padding-left: 5%;
+        line-height: 125%;
+    }
+    
+    .description-imgleft h3, .description-imgleft2 h3, .description-imgright h3{
+        max-width: 40%;
+        padding-left: 5%;
+        font-size: 1.5rem;
+    }
+    
+    .description-imgleft p, .description-imgright p{
+        max-width: 40%;
+        padding-left: 5%;
+        font-size: 0.9rem;
+    }
+    
+    #left-img1-mobile, #left-img2-mobile {
+        display: none;
+    }
+
+    .description-imgleft #left-img1, .description-imgleft #left-img2{
+        padding-top: 4%;
+    }
+    
+    .description-imgright img{
+        padding-top: 1%;
+    }
+
+    p.learn-more{
+        font-size: 0.8rem;
+    }
+}
+ 
+/* Mobile view: on screens that are 576 or less, apply a visible design/ layout change */
+@media screen and (max-width: 576px) {
+    header img {
+        margin-top: 2%;
+        width: 40%;
+        height: 30%;
+        text-align: left;
+        float: left;
+        padding-right: 35%;
+    }
+
+    nav {
+        padding-top: 5%;
+        text-align: right;
+        padding-right: 0%;
+        background-color: #85b98b;
+    }
+
+    /* hide the desktop view connect button and hamburger menu */
+    nav li {
+        display: none;
+        background-color: #85b98b;
+    }
+
+    /* display the tablet/mobile connect button and hamburger menu */
+    #connect-mobile {
+        font-family: Quicksand;
+        font-weight: bolder;
+        display: inline;
+        float: left;
+        padding-left: 2%;
+        padding-right: 2%;
+        /* padding-top: 1%; */
+        padding-bottom: 1%;
+        font-size: 0.5rem;
+        border: solid pink 1px;
+        background-color: pink;
+        border-radius: 2rem;
+        margin-top: -1%;
+    }
+
+    #hamburger-menu {
+        width: 5%;
+        height: 5%;
+        display: inline;
+        float: right;
+        margin-right: 3%;
+        margin-left: 0;
+        margin-top: -1%;
+        padding-right: 0;
+    }
+    
+    nav a:hover {
+        color: #25528e;
+    }
+
+    header {
+        display: inline-block;
+        width: 100%;
+        background-color: #85b98b;
+    }
+
+    #intro {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: #a8cdac;
+        margin-bottom: 10%;
+    }
+
+    #intro h2 {
+        display: block;
+        clear: both;
+        margin-left: 10%;
+        margin-right: auto;
+        text-align: left;
+        font-size: 100%;
+        max-width: 70%;
+        line-height: 130%;
+    }
+
+    #intro p {
+        display: block;
+        clear: both;
+        font-size: 20%;
+        margin-left: 10%;
+        margin-right: auto;
+        text-align: left;
+        max-width: 70%;
+        padding-left: 5%;
+        line-height: 130%;
+    }
+
+    #intro img{
+        display: block;
+        clear: both;
+        width: 45%;
+        height: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+    }
+
+    footer{
+        font-size: 0.7rem;
+        margin-top: 25%;
+    }
+
+    #descriptions, .description-imgleft, .description-imgright{
+        text-align: left;  
+        margin-left: auto;
+        margin-right: auto;  
+        margin-bottom: 0;
+    }
+    
+    .description-imgleft h3, .description-imgright h3{
+        display: block;
+        text-align: left;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+
+    .description-imgleft p, .description-imgright p{
+        display: block;
+        text-align: left;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 10%;
+        font-size: 0.7rem;
+    }
+
+    /* hide the images that were used for the desktop and tablet view*/
+    #left-img1, #left-img2 {
+        display: none;
+    }
+
+    /* display the images for the mobile view */
+    /* these images show up below the description text */
+    #left-img1-mobile, #left-img2-mobile, .description-imgright img{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 10%;
+        padding-bottom: 0;
+        margin-bottom: -15%;
+    }
+
+    .description-imgleft p.learn-more, .description-imgright p.learn-more{
+        display: block;
+        text-align: center;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 10%;
+        font-size: 0.6rem;
+    }
+}
+  
+  
